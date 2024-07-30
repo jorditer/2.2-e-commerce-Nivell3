@@ -34,15 +34,9 @@ $ git remote add origin <your repo name!>
 
 ## Submission
 
-1. Upon completion, run the following commands:
+1. It is necessary to upload each exercise in a separate commit. The commit name must clearly indicate its content.
 
-```bash
-$ git add .
-$ git commit -m "Sprint Solution"
-$ git push origin master
-```
-
-2. Upload the link to the virtual campus so that your mentor can correct it and give you feedback.
+2. Upload the link to your GitHub repository to the virtual campus, enabling your mentor to review and provide feedback.
 
 
 
