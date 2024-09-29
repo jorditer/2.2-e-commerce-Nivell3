@@ -241,7 +241,7 @@
 			<div class="modal-content">
 				<div class="modal-header">
 					<h5 class="modal-title" id="exampleModalLabel"><i class="fas fa-cart-arrow-down"></i> My Cart</h5>
-					<button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+					<button type="button" class="btn-close" data-bs-dismiss="modal" onclick="open_modal()" aria-label="Close"></button>
 				</div>
 				<div class="modal-body">
 					<h3 class="text-center bill px-5">Shopping Cart</h3>
@@ -255,28 +255,11 @@
 							</tr>
 						</thead>
 						<tbody id="cart_list">
-							<tr>
-								<th scope="row">Cooking oil</th>
-								<td>$10.5</td>
-								<td>2</td>
-								<td>$21</td>
-							</tr>
-							<tr>
-								<th scope="row">Pasta</th>
-								<td>$6.25</td>
-								<td>1</td>
-								<td>$6.25</td>
-							</tr>
-							<tr>
-								<th scope="row">Lawn dress</th>
-								<td>$15</td>
-								<td>3</td>
-								<td>$45</td>
-							</tr>
+							<!-- JS List -->
 						</tbody>
 					</table>
 					<div class="text-center fs-3">
-						Total: $<span id="total_price">100</span>
+						Total: $<span id="total_price"></span>
 					</div>
 					<div class="text-center">
 						<a href="checkout.html" class="btn btn-primary m-3">Checkout</a>
