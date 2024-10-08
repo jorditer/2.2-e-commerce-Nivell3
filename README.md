@@ -1,5 +1,24 @@
 # E-Commerce
 
+## Installation
+
+1. **Clone the repository** (if applicable):
+    ```sh
+    git clone <repository-url>
+    cd <repository-directory>
+    ```
+
+## Running the Project
+
+1. **Open the `index.html` file** in your web browser:
+    - You can do this by right-clicking the `index.html` file in your file explorer and selecting "Open with" followed by your preferred web browser.
+    - Alternatively, you can drag and drop the `index.html` file into an open browser window.
+
+2. **Navigate through the website**:
+    - Use the navigation links to explore different sections such as Grocery, Beauty, and Clothes.
+    - Click on the "Cart" button to view the shopping cart modal.
+    - Click on the "Checkout" button to navigate to the checkout page.
+
 ## Description
 In this project, I focused on manipulating hardcoded data to configure an e-commerce web page. The design was provided, and my task was to implement various JavaScript functionalities to enhance the user experience.
 
