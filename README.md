@@ -4,8 +4,8 @@
 
 1. **Clone the repository** (if applicable):
     ```sh
-    git clone <repository-url>
-    cd <repository-directory>
+    git clone https://github.com/jorditer/2.2-e-commerce-Nivell2.git
+    cd 2.2-e-commerce-Nivell2
     ```
 
 ## Running the Project
