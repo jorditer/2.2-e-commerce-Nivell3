@@ -75,18 +75,57 @@
     scroll-behavior: smooth;
   }
 }
+* {
+  font-family: 'Dancing Script', cursive;
+  font-size: 1.2rem;
+}
 
 body {
-  margin: 0;
-  font-family: var(--bs-body-font-family);
-  font-size: var(--bs-body-font-size);
-  font-weight: var(--bs-body-font-weight);
-  line-height: var(--bs-body-line-height);
-  color: var(--bs-body-color);
-  text-align: var(--bs-body-text-align);
-  background-color: var(--bs-body-bg);
-  -webkit-text-size-adjust: 100%;
-  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  background-image: url('../images/pattern.jpg');
+  background-repeat: repeat;
+  background-size: auto;
+}
+
+.copy {
+  font-family: initial;
+  font-size: initial;
+}
+
+header {
+  background-image: url('../images/store.jpg');
+  background-size: cover;
+  border-top: black solid 5px;
+  border-bottom: black solid 5px;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.card {
+  flex: 1 1 calc(25% - 1rem);
+  margin: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  max-height: 420px;
+}
+
+.card img {
+  height: 180px;
+  border: gray solid 2px;
+  box-sizing: border-box;
+}
+
+img {
+  height: 200px;
+  object-fit: cover;
+  box-sizing: border-box; /* Include the border within the element's dimensions */
+}
+
+
+.card-footer {
+  margin-top: auto; /* Push the footer to the bottom of the card */
 }
 
 hr {
@@ -11285,4 +11324,28 @@ textarea.form-control-lg {
   .d-print-none {
     display: none !important;
   }
+}
+h2 {
+  font-size: 3.8rem;
+  font-weight: bolder;
+}
+.total {
+  white-space: nowrap;
+  /* position: absolute; */
+}
+.total  *{
+  white-space: nowrap;
+}
+.remove-button {
+  position: absolute;
+  right:25px;
+  transform: translateY(-5px); /* Move the button 5px upwards from its current position */
+}
+
+.cart-page {
+  font-size: 1rem;
+}
+
+small {
+  font-size: 0.82rem;
 }

@@ -98,6 +98,8 @@ function buy(id) {
 function cleanCart() {
     cart.length = 0;
 	total = 0;
+    items = 0;
+    cartElement.innerText = items.toString();
     printCart();
 }
 
@@ -114,22 +116,40 @@ function calculateTotal() {
 // Exercise 4
 // Si l'usuari/ària compra 3 o més ampolles d'oli, el preu del producte es rebaixa un 20%.
 // Quan es compren 10 o més productes per a fer pastissos, el preu del producte es rebaixa un 30%.
+// const discountRules = [
+//     { id: 1, min: 3, discount: 0.8 },  // cooking oil
+//     { id: 3, min: 10, discount: 0.7 }  // muffins
+// ];
+
+// function applyPromotionsCart() {
+//     for (let product of cart) {
+//         const originalPrice = products.find(p => p.id === product.id).price;
+//         const discountRule = discountRules.find(rule => rule.id === product.id);
+
+//         if (discountRule && product.quantity >= discountRule.min) {
+//             product.price = originalPrice * discountRule.discount;
+//         } else {
+//             product.price = originalPrice;
+//         }
+//     }
+// }
+
 function applyPromotionsCart() {
-	for (let product of cart){
-		if (product.id === 1){  //cooking oil
-            if (product.quantity >= 3) {
-                product.price = products.find(product => product.id == 1).price * 0.8;
+    for (let product of cart) {
+        // Initialize originalPrice if it doesn't exist
+        if (!product.originalPrice) {
+            product.originalPrice = product.price;
+        }
+
+        if (product.offer) {
+            if (product.offer.number <= product.quantity) {
+                product.price = product.originalPrice * (1 - product.offer.percent / 100);
             } else {
-                product.price = products.find(product => product.id == 1).price;  // Si quito del carrito y ahora es < 3 quitar descuento
+                // Reset to original price if the offer condition is not met
+                product.price = product.originalPrice;
             }
-		} else if (product.id === 3){ //muffins
-            if (product.quantity >= 10){
-                product.price = products.find(product => product.id == 3).price * 0.7;
-            } else {
-                product.price = products.find(product => product.id == 3).price; // Si quito del carrito y ahora es < 10 quitar descuento
-            }
-		}
-	}
+        }
+    }
 }
 
 // Exercise 5
@@ -147,7 +167,7 @@ function printCart() {
                 <td>${item.price.toFixed(2)}</td>
                 <td>${item.quantity}</td>
                 <td>${(item.quantity * item.price).toFixed(2)}</td>
-                <td><button class="btn btn-primary" onclick=removeFromCart(${item.id})>Remove</button><td> 
+                <td><button class="remove-button btn btn-primary" onclick=removeFromCart(${item.id})>Remove</button><td> 
             </tr>`;
     }
     tbody.insertAdjacentHTML('beforeend', cartHTML)
