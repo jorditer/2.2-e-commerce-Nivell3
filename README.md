@@ -4,8 +4,8 @@
 
 1. **Clone the repository** (if applicable):
     ```sh
-    git clone https://github.com/jorditer/2.2-e-commerce-Nivell2.git
-    cd 2.2-e-commerce-Nivell2
+    git clone https://github.com/jorditer/2.3-e-commerce-Nivell2.git
+    cd 2.2-e-commerce-Nivell3
     ```
 
 ## Running the Project
@@ -20,7 +20,7 @@
     - Click on the "Checkout" button to navigate to the checkout page.
 
 ## Description
-In this project, I focused on manipulating hardcoded data to configure an e-commerce web page. The design was provided, and my task was to implement various JavaScript functionalities to enhance the user experience.
+In this project, I focused on manipulating hardcoded data to configure an e-commerce web page."The core design was provided, and I had the chance to elevate it by integrating advanced JavaScript functionalities and making thoughtful design enhancements. I introduced a custom pattern, updated the font, and added images to create a more visually appealing and engaging user experience. Additionally, I refined the form validation and user feedback mechanisms to ensure a seamless and intuitive checkout process.
 
 ## JavaScript Functionality
 * **Add items to the cart**: Users can add products to their shopping cart.
