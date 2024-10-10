@@ -4,7 +4,7 @@
 
 1. **Clone the repository** (if applicable):
     ```sh
-    git clone https://github.com/jorditer/2.3-e-commerce-Nivell2.git
+    git clone https://github.com/jorditer/2.3-e-commerce-Nivell3.git
     cd 2.2-e-commerce-Nivell3
     ```
 
